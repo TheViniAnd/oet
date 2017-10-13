@@ -1,0 +1,13 @@
+{% extends 'home/base.html' %}
+{% block content %}
+<div class="post">
+    {% if post.published_date %}
+    <div class="date">
+        {{ post.published_date }}
+    </div>
+    {% endif %}
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.text|linebreaksbr }}</p>
+    <img src='{{ post.image.url }}' style="max-height: 300px" class="img-responsive"/>
+</div>
+{% endblock %}

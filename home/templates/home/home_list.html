@@ -1,10 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'home/base.html' %}
 
-</body>
-</html>
+{% block content %}
+{% for post in posts %}
+  <div>
+      <p>Op: {{ post.published_date }}</p>
+      <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+      <p>{{ post.text|linebreaksbr }}</p>
+      {% if post.image %}
+       <img src="{{ post.image.url }}" style="max-height: 300px" class="img-responsive"/>
+      {% endif %}
+  </div>
+{% endfor %}
+{% endblock %}
