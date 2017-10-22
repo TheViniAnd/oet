@@ -1,14 +1,40 @@
 {% extends 'home/base.html' %}
-
 {% block content %}
+
+<div class="headblockgl">
+    <nav>
+        <h2>ОЭТ <b> | </b><a href="#ex1"><font color="#dcdcdc">PEREHOD</font></a><b> | </b></h2>
+    </nav>
+</div>
+
+<div class="imaa">
+    <div class="unupblock">
+
+    </div>
+</div>
+
+<div class="middleblock">
+    <div class="couls">
+    </div>
+</div>
+<div id="ex1"></div>
 {% for post in posts %}
-  <div>
-      <p>Op: {{ post.published_date }}</p>
+       <div class="blog">
+         <div class="texblock">
+             <div class="revealator-slidedown revealator-once revealator-once">
+      <div class="texpub"><p>&nbsp;&nbsp;Op: {{ post.published_date }}</p></div>
       <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
       <p>{{ post.text|linebreaksbr }}</p>
       {% if post.image %}
        <img src="{{ post.image.url }}" style="max-height: 300px" class="img-responsive"/>
+         </div>
+     </div>
+</div>
       {% endif %}
-  </div>
 {% endfor %}
+<div id="headblock">
+    <nav id="button">
+<h2>ОЭТ <b> | </b><a href="#ex1">PEREHOD</a><b> | </b></h2>
+    </nav>
+</div>
 {% endblock %}

@@ -1,13 +1,18 @@
+{% load staticfiles %}
 <html>
 <head>
     <meta charset="UTF-8">
     <title>ОЭТ</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/block.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fm.revealator.jquery.css' %}">
+    <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/head.js' %}"></script>
+    <script src="{% static 'js/fm.revealator.jquery.js' %}"></script>
+    <script src="{% static 'js/fm.revealator.jquery.min.js' %}"></script>
 </head>
-<div>
-    <h2>Home</h2>
-</div>
 <div>
 {% block content %}
 {% endblock %}

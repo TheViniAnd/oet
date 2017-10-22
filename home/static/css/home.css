@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic|Comfortaa:400,700&subset=latin,cyrillic);
+
+.blog{
+    background: white;
+    width: 100%;
+    margin-right: 1px;
+    padding: 25px;
+}
+p{
+    color:black;
+}
+h1{
+    color: black;
+}
+
+a{
+    outline: none;
+}
+a:link{
+    text-decoration: none;
+    color:gainsboro;
+}
+
+h2{
+    color: gainsboro;
+    font-family: 'Comfortaa', cursive;
+}
+.texblock{
+    border: 2px solid white;
+    padding: 15px;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 22px 5px 5px 4px;
+    background: white;
+    margin-bottom: -20px;
+    top:40px;
+    margin-top: -10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.texpub{
+    border: 1px solid cornflowerblue;
+    padding: 5px;
+    margin-left: -17px;
+    margin-right: -17px;
+    margin-top: -16px;
+    border-radius: 23px 5px 5px 4px;
+    padding-bottom: -50px;
+    margin-bottom: -12px;
+}
+img{
+    position: relative;
+    border: 3px solid black;
+}
+#headblock{
+    background:cornflowerblue;
+    -o-background-size: 100%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    width: 100%;
+    position: fixed;
+    height: 75px;
+    margin-bottom: 1%;
+    top:-20px;
+    opacity: 0.6;
+    display: none;
+}
+
+.headblockgl{
+    background: white no-repeat center;
+    -o-background-size: 100%;
+    background-size: 100%;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    margin-bottom: 1%;
+    top:-20px;
+    opacity: 0.7;
+}
+
